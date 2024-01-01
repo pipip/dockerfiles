@@ -5,5 +5,5 @@
 
 docker buildx build \
   --progress=plain \
-  --output type=image,name=pipip/rompr:alpine-latest,push=false,compression=gzip,compression-level=9 \
+  --output type=image,name=pipip/rompr:latest,push=false,compression=gzip,compression-level=9 \
   ./rompr

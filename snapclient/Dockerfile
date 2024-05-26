@@ -7,13 +7,13 @@ ENV SOUNDCARD default
 ENV NAME instancename
 
 # Add testing libraries: source of the librespot binary
-#RUN echo "https://dl-cdn.alpinelinux.org/alpine/edge/testing/" >> /etc/apk/repositories
+RUN echo "@edge https://dl-cdn.alpinelinux.org/alpine/edge/community/" >> /etc/apk/repositories
 
 RUN apk add --no-cache \
     bash \
     wget \
     sed \
-    snapcast-client
+    snapcast-client@edge
 
 RUN /usr/bin/snapclient -v
 

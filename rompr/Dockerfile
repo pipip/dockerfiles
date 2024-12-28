@@ -10,7 +10,7 @@ RUN apk add --no-cache php83-pdo php83-pdo_sqlite php83-simplexml
 RUN rm -rf /var/cache/apk/*
 
 # Get Rompr
-ARG ROMPR_VERSION=2.15
+ARG ROMPR_VERSION=2.16
 ARG ZIP_FILE=rompr-$ROMPR_VERSION.zip
 ARG FETCH_URL=https://github.com/fatg3erman/RompR/releases/download/$ROMPR_VERSION/$ZIP_FILE
 
